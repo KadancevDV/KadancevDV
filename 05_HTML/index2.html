@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <h1>Заполните анкету</h1>
+    <table >
+<tr><td>
+<fieldset>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" ></form>
+<legend>Личные данные</legend>
+<INPUT TYPE="text" ID="index_1" NAME="index_1" pattern="[А-Я,а-я,]{1,25}-s AUTOFOCUS" placeholder="Фамилия">
+<label for=“surname”>text:Только кириллица,без пробелов, длина поля до 25 символов,обязательное поле, автофокус на данном поле) </label><br>      
+<INPUT TYPE="text" ID="index_1" NAME="index_1"  pattern="[А-Я,а-я,]{1,20} " placeholder="Имя">
+<label for="name">text:Только кириллица,без пробелов, длина поля до 20 символов,обязательное поле)</label><br>
+<INPUT TYPE="text" ID="index_1" NAME="index_1"  pattern="[А-Я,а-я,]{1,24} " placeholder="Отчество">   
+<label for="patronymic">text:Только кириллица,без пробелов, длина поля до 24 символов,обязательное поле)</label><br>
+</fieldset>
+</td><tr>
+<tr><td><table>
+    <tr><td>
+        <fieldset>
+        <Legend>Паспортные данные</Legend>
+        <label for="name">text:Серия-только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле</label><br>
+        <label for="name">text: Номер паспорта, только цифры с длиной 7 и максимальным количеством цифр не менее 7, количество букв не менее 7, обязательное поле</label><br>
+        <INPUT TYPE="text" ID="index_1" NAME="index_1"  pattern="[A-Z,a-z]{1,2} " placeholder="AA">
+        <INPUT TYPE="text" ID="index_1" NAME="index_1"  pattern="[0-9]{1,7} " placeholder="1234567">
+</fieldset>
+    </td></tr>
+</table></td></tr>
+<tr><td><table>
+    <tr><td>
+        <fieldset>
+            <legend>Дата рождения</legend>
+<INPUT TYPE="text" ID="index_1" NAME="index_1"  pattern="{1,4} " placeholder="2000">
+<label for="year">text:Год рождения 4-е цифры</label><br>
+<select name="list" id="list">
+    <optgroup label="Месяц рождения">
+          <option value="1">Январь</option>
+          <option value="2">Февраль</option>
+          <option value="3">Март</option>
+          <option value="4">Апрель</option>
+          <option value="5">Май</option>
+          <option value="6">Июнь</option>
+          <option value="7">Июль</option>
+          <option value="8">Август</option>
+          <option value="9">Сентябрь</option>
+          <option value="10">Октябрь</option>
+          <option value="11">Ноябрь</option>
+          <option value="12">Декабрь</option>
+    </optgroup>
+    <label for="month">text:Месяц рождения</label>
+
+
+
+        </fieldset>
+        
+
+    </td></tr>
+</table></td></tr>
+
+
+
+
+    
+    
+    
+
+
+
+    
+
+
+
+
+
+</table>
+</body>
+</html>
