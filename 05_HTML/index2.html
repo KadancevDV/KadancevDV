@@ -41,7 +41,7 @@
           <option value="11">Ноябрь</option>
           <option value="12">Декабрь</option>
          </optgroup></select>
-         <INPUT TYPE="text" ID="number"   pattern="[1-31] " >
+         <INPUT TYPE="number" ID="number"   pattern="[1-31] " >
          <label for="number">number:Диапозон от 1 до 31</label><br>
         </fieldset>   
         </form>
@@ -68,18 +68,16 @@
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
     <fieldset>
      <legend>Интересы</legend> 
-    <form action="">
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
      <fieldset>
      <legend>array:Хобби</legend>
      <input type="checkbox" name="hobby1">Рыбалка<br>
      <input type="checkbox" name="hobby2">Астрономия<br>
      <input type="checkbox" name="hobby3">Дайвинг<br>
      <input type="checkbox" name="hobby3">Марки<br>
-
-     
-     
      </fieldset>
     </form>
+
 
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
      <fieldset>
@@ -126,12 +124,11 @@
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
     <fieldset>
      <legend>Цифры</legend>
-     <input type="number" pattern="[-2.5-2.5]">number:Диапозон от -2.5 до 2.5 с шагом 0.1 <br>
+     <input type="number" pattern="[double i=-2,5; i<2,5; i+=0.1]">number:Диапозон от -2.5 до 2.5 с шагом 0.1 <br>
      <input type="range" min="1" max="10">range:Максимальное 10 минимальное 1 <br>
-
-
     </fieldset>
     </form>
+
 
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
     <fieldset>
@@ -139,7 +136,6 @@
     <input type="submit" value="Отправить">
     <input type="reset" value="Сбросить"><br>
     <input type="image" src="data:image/jpeg;base64,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">
-
 
     -при нажатии на эту кнопку ничего не происходит
     
