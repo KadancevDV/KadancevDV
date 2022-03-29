@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<style>
+  .body{background-color: grey;}
+  .menu{background-color: gainsboro;
+        width: 15em;
+        float: left;}
+  .block{ margin-left: 14em;
+          float: none;
+          background-color: darkgray;
+          margin-bottom: .2em;
+          overflow: auto;}
+.footer{background-color: grey;
+        clear: both;}
+.image{float: right;}
+
+</style>
+<body>
+  <div class="menu">
+    <ul><li> Ширина 15 em</li>
+      <li>Должен присутствовать цвет фона</li>
+      <li>Распологается слева</li>
+      <li>Блок навигации наполните <br> 
+        контентом достаточным, <br>
+        чтобы по высоте он начинал <br>
+         захватывать вторую статью, <br>
+         как показано в данном <br>
+         примере</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h3>Статья 1</h3>  
+      <p> Размер блока занимает всю доступную ширину 
+        Должен присутствовать цвет фона 
+        Во всех "статьях" сделайте от соседней равным .2em 
+        при помощи свойства margin-botton.</p>  
+  </div>
+  <div class="block">
+    <h3>Статья 2</h3>
+      <p>  Размер блока занимает всю доступную ширину 
+        Должен присутствовать цвет фона 
+        Во всех "статьях" сделайте от соседней равным .2em 
+        при помощи свойства margin-botton. 
+        Картинка вставлена при помощи тега. Плавание организовано по првому краю внутри
+        данной статьи этой картинки. </p>
+        <img src="1.jpg" alt="mail" class="image">
+  </div>
+  
+
+  <div class="footer">
+   <p>Нижний блок подвал. Занимает всю ширину страницы. Высота определяется помещенным внутрь контентом.</p> 
+</div>
+
+</body>
+  
+</html>
