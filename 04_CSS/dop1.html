@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    
+    a[href$='.doc']::before{content: url(doc.jpg);}
+    a[href$='.pdf']::before{content: url(pdf.png);}
+    a[href$='.zip']::before{content: url(zip.gif);}
+    
+    li::before {content: url(logo3.jpg);}
+    li::after {content: url(logo3.jpg);}
+
+</style>
+<body>
+  <H1>Форматы файлов.</H1>
+  <p>.DOC или .doc ( от анг. <a href="https://ru.wikipedia.org/wiki/.doc" target="_blank"><img src="logo1.png" alt="doc">document</a>)- расширение имени файла, используемое для файлов,</p>
+  <p>представляющих текст с расметкой или без . Расширение .DOC часто используется для <br>
+    простых текстовых файлов без оформления, однако позже стало <br>
+    использоваться для двоичных форматов с разметкой. <br>
+  <a href="#" style="background: url(doc.jpg) no-repeat right; padding: 18px;">Документ MS Wold </a></p> 
+
+  <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank"><img src="logo1.png" alt="pdf">pdf</a>)-меплатформенный формат электронных документов, <br>
+    разработанных фирмой Adobe Systems с использованием ряда возможностей языка <br>
+    Postscript. <br>
+    <a href="#" style="background: url(pdf.png) no-repeat right; padding: 18px;">Доукент PDF </a></p> 
+     
+  </p>
+
+  <p>ZIP-популярный формат сжатия данных и архивации файлов. Файл в этом формате <br>
+    обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/ZIP" target="_blank"><img src="logo1.png" alt="zip">zip</a> и хранит в сжатом или несжатом виде один или несколько <br>
+    файлов, которые можно из него извлечь путем распаковки с пощью специальной <br>
+    программы. <br>
+    <a href="#" style="background: url(zip.gif) no-repeat right; padding: 18px;">Архивы </a></p>
+    
+
+  </p>
+
+  <H2>Это список файлов</H2>
+  <ul>
+    <li > <a href="#">Документ MS Word</a> </li>
+    <li > <a href="#"> Документ PDF</a> </li>
+    <li > <a href="#">Документ ZIP</a> </li>
+  </ul>
+ 
+</body>
+  
+</html>
