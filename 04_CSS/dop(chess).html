@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    tr:nth-child(odd) td:nth-child(odd) {
+	background: rgba(0, 0, 0, 0.288);}	
+ tr:nth-child(even) td:nth-child(even) {
+	background: rgba(0, 0, 0, 0.342);}
+
+  table {
+	counter-reset: test 65;
+}
+td::before {
+	counter-increment: test -1;
+	content: counter(test);
+}
+
+
+</style>
+<body>
+    <table align="center" width= “400px”  height= "300px"  border="3" cellspacing="0" cellpadding="17">
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+       
+        
+
+    </table>
+  
+
+  
+    
+</body>
+  
+</html>
