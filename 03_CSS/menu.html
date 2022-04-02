@@ -6,160 +6,77 @@
 </head>
 
 <style>
-  nav {margin: 100px 200px;
-			}
-			
-			
-			nav ul {
-			    padding:0;
-			    margin: 0;;
-			    list-style: none;
-			    position: relative;
-			    }
-			
-		
-			nav ul li {
-			    margin: 0px -7px 0 0;
-			    display:inline-block;
-			    background-color: #afa8a8;
-			    }
-			
-			
-			nav a {
-			    display:block;
-			    padding:0 10px;
-			    color:#FFF;
-			    font-size:20px;
-			    line-height: 60px;
-			    text-decoration:none;
-			}
-			
-		
-			nav a:hover {
-			    background-color: #000000;
-		}
-    nav ul ul {
-			    display: none;
-			    position: absolute;
-			    top: 100%;
-			}
-			
-		
-			nav ul li:hover > ul {
-			    display:inherit;
-			}
-			
-			
-			nav ul ul li {
-			    min-width:170px;
-			    float:none;
-			    display:list-item;
-			    position: relative;
-			}
-      @media all and (max-device-width: 800px){
-      
-      
-      nav {margin: 100px ;
-			}
-       
-			
-			
-			nav ul {
-			    padding:0;
-			    margin: 0;;
-			    list-style: none;
-			    position: relative;
-			    }
-			
-		
-			nav ul li {
-			    margin: 0px -7px 0 0;
-			    display:inline-block;
-			    background-color: #afa8a8;
-			    }
-			
-			
-			nav a {
-			    display:block;
-			    padding:0 10px;
-			    color:rgb(177, 51, 51);
-			    font-size:20px;
-			    line-height: 60px;
-			    text-decoration:none;
-			}
-			
-		
-			nav a:hover {
-			    background-color: #000000;
-		}
-    nav ul ul {
-			    display: none;
-			    position: absolute;
-			    top: 100%;
-			}
-			
-		
-			nav ul li:hover > ul {
-			    display:inherit;
-			}
-			
-			
-			nav ul ul li {
-			    min-width:170px;
-			    float:none;
-			    display:list-item;
-			    position: relative;
-			}
-      }
+  div.Level1{ background-color: gray; border: solid rgb(158, 151, 85) 1px; position: relative; cursor: pointer }
+  div.Level1{ width: 150px;height: 50px; }
   
+  div.Level2 { width: 150px; display: none }
+  div.Level2>div{ background-color: cyan; border: solid rgb(255, 0, 234) 1px; cursor: pointer }
+  
+  div.Level1:hover div.Level2{ display: block; position: absolute; top: 90%; z-index: 1 }
+  .Level1{float: left;}
+
+
+@media only screen (max-widht:1900px) {
+  div.Level1{ background-color: gray; border: solid rgb(158, 151, 85) 1px; position: relative; cursor: pointer }
+  div.Level1{ width: 150px;height: 50px; }
+  
+  div.Level2 { width: 150px; display: none }
+  div.Level2>div{ background-color: cyan; border: solid rgb(255, 0, 234) 1px; cursor: pointer }
+  
+  div.Level1:hover div.Level2{ display: block; position: absolute; left: 50%; top: 90%; z-index: 1 }
+  }
   
 </style>
 <body>
-  <nav>
-    <ul>
-        <li><a href="#">Понедельник</a>
-        <ul>
-          <li><a href="#">Завтрак</a></li>
-          <li><a href="#">Обед</a></li>
-          <li><a href="#">Ужин</a></li>
-      </ul>
-    </li>
 
-        <li><a href="#">Вторник</a>
-          <ul>
-            <li><a href="#">Завтрак</a></li>
-            <li><a href="#">Обед</a></li>
-            <li><a href="#">Ужин</a>
-            </li>
-        </ul>  
-        </li>
-        <li><a href="#">Среда</a>
-          <ul>
-            <li><a href="#">Завтрак</a></li>
-            <li><a href="#">Обед</a></li>
-            <li><a href="#">Ужин</a>
-            </li>
-        </ul>
-        </li>
-        <li><a href="#">Четверг</a>
-          <ul>
-            <li><a href="#">Завтрак</a></li>
-            <li><a href="#">Обед</a></li>
-            <li><a href="#">Ужин</a>
-            </li>
-        </ul>
-        </li>
-        <li><a href="#">Пятница</a>
-          <ul>
-            <li><a href="#">Завтрак</a></li>
-            <li><a href="#">Обед</a></li>
-            <li><a href="#">Ужин</a>
-            </li>
-        </ul>
-        </li>
-        
-    </ul>
-</nav>
+
+     <div class="Level1">Понедельник 
+        <div class='Level2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+     </div>
+
+     <div class="Level1">Вторник
+      <div class='Level2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+     </div>
+
+     <div class="Level1">Среда
+      <div class='Level2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+     </div>
+
+     <div class="Level1">Четверг
+      <div class='Level2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+     </div>
+
+     <div class="Level1">Пятница
+      <div class='Level2'>
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+        </div>
+     </div>
+
+
+
+
+     
+
+
+
 
 
   
