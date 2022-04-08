@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .hidcont { display: none; }
+    table {
+    width: 40%;
+    border-collapse: collapse;
+    border-style: dashed
+   }
+    tr:nth-child(odd) { background-color: grey }
+    th {background: #3fac44;} 
+    tr:hover {
+    background: #20afaf; 
+    color: #fff; }
+    
+</style>
+
+
+
+<body>
+    <table border="1" id="table_data" >
+        <tr class="header">
+            <th>ФИО</th><th>пол</th><th>должность</th><th>дата рож.</th><th>Данные 01</th> <th>Данные 02</th>
+        </tr>
+        <tr class="header">
+            <td >Иванов Иван Иванович</td><td>М</td><td>начальник</td><td>01.01.1960</td><td>4567</td><td>3453</td>
+        </tr>
+        <tr class="header">
+            <td>Петрова Илонна Петровна</td><td>Ж</td><td>секретарь</td><td>01.01.1989</td><td>98795</td><td>46523</td>
+        </tr>
+        <tr class="header">
+            <td>Сидоров Илья Игорьевич</td><td>М</td><td>бухгалтер</td><td>01.01.1979</td><td>743434</td><td>987979</td>
+        </tr>
+        <tr class="header">
+            <td>Пунин Федор Федорович</td><td>М</td><td>водитель</td><td>01.01.1963</td><td>74323434</td><td>9232379</td>
+        </tr>
+        <tr class="header">
+            <td>Крупин Сергей Иванович</td><td>М</td><td>водитель2</td><td>01.01.1983</td><td>3234534</td><td>923123379</td>
+        </tr>    
+    </table>
+
+    <button id="btn" >Показать все строки</button>
+
+   
+
+
+    
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+            $('td').click(function(){
+                $(this).parent('tr').hide(400)});
+        $('#btn').click(function(){
+            $('tr').show(400);
+        });       
+}) 
+
+</script>
+</body>
+</html>
